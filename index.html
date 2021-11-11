@@ -12,39 +12,42 @@
 </head>
 <body>
 
-    <div class="print-area">
-
-        <div class="header">
+    <main>
+        <!------------------HEADER SECTION------------------>
+        <header>
             <img src="./img/img1.jpg" alt="Photo-NaimaTOURAGHE">
             <div class="header-text">
                 <h1>Naima TOURAGHE</h1>
-                <p>Développeuse Web et Web Mobile</p>
+                <h2>Développeuse Web et Web Mobile</h2>
             </div>
-        </div>
+        </header>
 
-        <div class="content">
+        <!------------------BODY SECTION------------------>
+        <section class="content">
 
-            <div class="left-side">
+            <!------------------LEFT-SIDE SECTION------------------>
+            <aside class="left-side">
+
                 <div class="container">
 
-                    <div class="contact">
-                        <h1>Infos</h1>
+                    <article class="contact">
+                        <h3>Infos</h3>
                         <p><i class="far fa-user"></i> 29 ans</p>
                         <p><i class="fas fa-map-marker-alt"></i> Toulouse</p>
                         <p><i class="fas fa-route"></i> Toulouse et environs</p>
                         <p><i class="far fa-envelope"></i> touraghen@gmail.com</p>
-                    </div>
+                    </article>
             
-                    <div class="languages">
-                        <h1>Langues</h1>
+                    <article class="languages">
+                        <h3>Langues</h3>
                         <p>Italien: Bilingue</p>
                         <p>Berbère: Bilingue</p>
                         <p>Anglais: Avancé (C1)</p>
                         <p>Espagnol: Intermédiaire avancé (B2)</p>
-                    </div>
+                    </article>
 
-                    <div class="skills">
-                        <h1>Compéténces</h1>
+                    <article class="skills">
+                        <h3>Compéténces</h3>
                         <div class="bars">
                             <div class="bar" id="HTMLCSS">
                                 <p>HTML/CSS</p>
@@ -76,20 +79,23 @@
                                 <span></span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="hobby">
-                        <h1>Centres d'interet</h1>
+                    <article class="hobby">
+                        <h3>Centres d'intérêt</h3>
                         <p>Sports: Course à pied, natation, boxe anglaise</p>
                         <p>Lecture: Dévéloppement personnel, philosophie, data science</p>
+                    </article>
 
-                    </div>
                 </div>
-            </div>  
+            </aside>  
 
-            <div class="right-side">
+            
+            <!------------------RIGHT-SIDE SECTION------------------>
+            <aside class="right-side">
 
-                <div class="about">
+                <!------------------FIRST SECTION------------------>
+                <section class="about">
 
                     <div class="citation">
                         <figure>
@@ -103,23 +109,27 @@
                     </div>
 
                     <div class="project">
-                        <h1>Projet</h1>
-                        <p>Mon principal projet c'est d'apprendre et m'améliorer. Je souhaite également aquérir l'autonomie et la logique nécessaires à conduire et porter à terme un projet de dévéloppement. </p>
+                        <h4>Mon projet</h4>
+                        <p>Cette année, mon principal projet c'est d'apprendre et m'améliorer. <br> Je souhaite également aquérir l'autonomie et la logique nécessaires à conduire et porter à terme un projet de dévéloppement web.</p>
                     </div>   
 
-                </div>
+                </section>
 
-                <div class="education">
-                    <h1><span><i class= "fas fa-book"></i>
-                    </span>FORMATION</h1>
-                        <div class="edu-group">
-                            <h4>Développeuse Web et Web Mobile,<br>
-                                - Simplon</h4>
-                            <span>2021</span>
-                            <p>Formation en cours</p>
-                        </div>
-                        <div class="edu-group">
-                            <h4>Openclassrooms</h4>
+
+                <!------------------SECOND SECTION------------------>
+                <section class="education">
+                    <h4><span><i class= "fas fa-book"></i>
+                    </span>Formation</h4>
+
+                        <article class="edu-group">
+                            <h5>Titre RNCP: Développeur web et web mobile</h5>
+                            <h6>Simplon.Co</h6>
+                            <span>2021/2022</span>
+                        </article>
+                        
+                        <article class="edu-group">
+                            <h5>Openclassrooms</h5>
+                            <h6>Formation autodidacte</h6>
                             <span>2021</span>
                             
 
@@ -134,19 +144,22 @@
                                 <li>Apprenez à utiliser la ligne de commande dans un terminal</li>
                                 <li>Concevez votre site web avec PHP et MySQL</li>
                             </ul>
+                        </article>
 
-                        </div>
-                        <div class="edu-group">
-                            <h4>BTS Tourisme<br>
-                            - CNED Grenoble</h4>
+
+                        <article class="edu-group">
+                            <h5>BTS Tourisme</h5>
+                            <h6>CNED Grenoble</h6>
                             <span>2020</span>
-                        </div>
-                    </div>
-                <div class="work">
-                    <h1><span><i class="fas fa-briefcase"></i></span>EXPERIENCE PROFESSIONELLE</h1>
+                        </article>
+                    </section>
+
+                <!------------------THIRD SECTION------------------>
+                <section class="work">
+                    <h4><span><i class="fas fa-briefcase"></i></span>Experience Professionelle</h4>
                     <div class="work-group">
-                        <h3>RECEPTIONNISTE DE JOUR</h3>
-                        <h4>Adagio Access Toulouse</h4>
+                        <h5>Adagio Access Toulouse</h5>
+                        <h6>Réceptionniste de jour</h6>
                         <span>2020/2021</span>
                     <ul>
                         <li>Saisie des réservation et affectation des chambres via RESAWEB</li>
@@ -161,19 +174,25 @@
                     
                     </div>
                     <div class="work-group">
-                        <h3>RECEPTIONNISTE DE JOUR</h3>
-                        <h4>Citadines Wilson Toulouse</h4>
+                        <h5>Citadines Wilson Toulouse</h5>
+                        <h6>Réceptionniste de jour</h6>
                         <span>2018/2020</span>
                         <ul>
                             <li>Saisie des réservation et affectation des chambres via PROTEL</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
 
-    <button>Imprimer le CV</button>
+
+            </aside>
+        </section>
+    </main>
+
+
+    <!------------------FOOTER SECTION------------------>
+    <footer>
+        <button>Imprimer le CV</button>
+    </footer>
 
     <script>
         var btn = document.querySelector("button");
