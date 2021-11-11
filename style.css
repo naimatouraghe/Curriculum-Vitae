@@ -70,6 +70,11 @@ h4{
     text-transform: uppercase;
     margin: 20px 0;
 }
+h4~p{
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+}
 
 h5{
     font-size: 18px;
@@ -126,14 +131,10 @@ header img {
 .left-side{
     width: 35%;
     background: var(--color3);
-    
-
-}
-
-.container{
     display: flex; 
     flex-direction: column;
 }
+
 
 /*CONTACT SECTION*/
 
@@ -261,6 +262,8 @@ header img {
     width: 65%;
     padding: 30px;
     background: var(--color4);
+    display: flex;
+    flex-direction: column;
 }
 
 /*FIRST SECTION*/ 
@@ -277,6 +280,11 @@ header img {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: solid black 1px;
+    padding: 15px;
+    border-radius: 8px ;
+    background: var(--color2); 
+    box-shadow: 0px 2px 2px 0px;
 }
 
 blockquote p {
@@ -288,16 +296,17 @@ figcaption{
     text-align: right;
 }
 
-.project{
+.dream{
     width: 60%;
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid black 1px;
+    padding: 15px;
     border-radius: 8px ;
     background: var(--color2); 
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 0px 2px 2px 0px;
 }
 
 .project p {
@@ -368,12 +377,25 @@ button:hover{
 
 @media print {
     body * {
-        visibility: hidden;
+        visibility: hidden;   
     }
 
-    .print-area * {
+    main * {
         visibility: visible;
     }
-}
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    header img{
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 200px;
+    }
+}  
 
 
