@@ -1,0 +1,375 @@
+
+/**************** FONT & PALETTE ********************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --color1: rgb(109, 87, 91);
+    --color2: rgba(155, 138, 142, 0.685);
+    --color3: rgba(126, 114, 116, 0.685);
+    --color4: rgba(102, 98, 98, 0.322);
+}
+
+
+/******************* GENERAL SETTINGS *******************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: var(--color4);
+}
+
+h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 45px 0px 10px 25px ;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+p{
+    font-size: 16px;
+    margin: 25px 0px 10px 25px;
+    text-align: left;
+}
+.print-area{
+    width: 80%;
+    margin: 20px auto;   
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background: var(--color1);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/********************* HEADER *******************/
+.header img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border : 5px solid white;
+    box-shadow: 3px 3px 10px var(--color1);
+}
+
+.header-text{
+    color: white;
+    width: 70%;
+    margin-left: auto;
+}
+
+.header-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 55px;
+}
+
+.header-text p{
+    font-size: 20px;
+    color: white;
+    margin-left: 55px;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+}
+
+/********************* LEFT SIDE *******************/
+
+.left-side{
+    width: 35%;
+    background: var(--color2);
+}
+
+.container{
+    display: flex; 
+    flex-direction: column;
+}
+/*CONTACT SECTION*/
+
+.contact{
+    margin-top: 130px ;
+    margin-bottom: 30px;
+}
+
+/*LANGUAGES SECTION */
+.languages{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/*SKILLS SECTION*/
+
+.skills{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.bars{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+}
+
+.bar
+{
+    margin: 0 25px;
+}
+
+.bars .bar p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: var(--color3);
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar#HTMLCSS span:before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+.bar#Figma span:before{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+.bar#JS span:before{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+
+.bar#PHP span:before{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+.bar#NODE span:before{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+.bar#SQL span:before{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 80%;
+    background: var(--color1);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+/*HOBBY SECTION*/
+
+.hobby{   
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/************************ RIGHT SIDE *********************/
+.right-side{
+    width: 65%;
+    padding: 30px;
+    background: rgba(248, 247, 247, 0.89);
+}
+
+/*FIRST SECTION*/ 
+
+.about{
+    display: flex; 
+    flex-direction: row;  
+    /*justify-content: space-around;*/
+    gap: 30px;
+}
+
+.citation{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+blockquote p {
+    text-align: left;  
+    margin: 0; 
+}
+
+figcaption{
+    text-align: right;
+}
+
+.project{
+    width: 60%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 8px ;
+    background: var(--color2); 
+    box-shadow: 1px 1px 1px 1px;
+}
+.project h1{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.project p {
+    text-align: center; 
+    margin:0;
+    padding: 10px 10px;
+}
+
+/*SECOND SECTION : FORMATION*/
+.education{
+    margin: 20px;
+}
+.education h1 {
+    margin: 0px;
+    margin-top: 60px;
+}
+.edu-group{
+    position: relative;
+    margin-top: 10px;
+}
+
+.edu-group h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.edu-group p {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.edu-group span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*THIRD SECTION : WORK GROUP*/
+.work{
+    margin: 20px;
+}
+.work h1 {
+    margin: 0px;
+    margin-top: 60px;
+}
+
+.work-group{
+    position: relative;
+    margin-top: 10px;
+}
+
+.work-group h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.work-group h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: grey;
+}
+
+.work-group span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*PRINT SECTION */
+button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background: var(--color1);
+    color: white;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    box-shadow: 0 0 10px var(--color2);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--color3);
+    box-shadow: 0 0 30px var(--color4);
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .print-area * {
+        visibility: visible;
+    }
+}
